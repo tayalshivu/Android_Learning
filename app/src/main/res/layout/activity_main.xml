@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="OpenDailog"
+        android:text="Open Dailog"
         android:layout_marginTop="50dp"
         android:onClick="OpenDialog"
     />
