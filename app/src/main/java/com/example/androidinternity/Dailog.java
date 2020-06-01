@@ -18,16 +18,38 @@ public class Dailog extends DialogFragment {
     EditText text;
     DailogListener listener;
     AlertDialog.Builder builder;
-    AlertDialog alertDialog;
+    Dialog alertDialog;
+
+//    @Override
+//    public void onStart() {
+//        if (getDialog()==null)
+//            return;
+//        getDialog().getWindow().setWindowAnimations(R.style.DialogSlide);
+//        super.onStart();
+//    }
+//
+////        @Override
+////    public int getTheme() {
+////        return R.style.DialogSlide;
+////    }
+
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getDialog().getWindow().getAttributes().windowAnimations=R.style.DialogSlide;
+    }
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.layout_dailog,null);
+        //getDialog().getWindow().getAttributes().windowAnimations=R.style.DialogSlide;
         text=view.findViewById(R.id.text);
+        //alertDialog.getWindow().getAttributes().windowAnimations=R.style.DialogSlide;
         builder.setView(view)
-                .setTitle("Dailog")
                 .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
