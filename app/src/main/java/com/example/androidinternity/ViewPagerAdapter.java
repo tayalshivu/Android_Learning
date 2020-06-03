@@ -38,6 +38,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         else if (position==2)
             return "Status";
         else
-            return "Calls";
+            return "Callsc";
     }
 }

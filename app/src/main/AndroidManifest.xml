@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".RegisterSharedPref" />
+        <activity android:name=".LoginSharedPref" />
+        <activity android:name=".ViewPagerWithTabLayout" />
+        <activity android:name=".Settings" />
         <activity android:name=".MainActivity" />
         <activity android:name=".FragmantDemo" />
-        <activity android:name=".ViewPagerWithTabLayout">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

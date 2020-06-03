@@ -57,6 +57,11 @@ public class ViewPagerWithTabLayout extends AppCompatActivity {
                         item.setChecked(true);
                         finish();
                         drawerLayout.closeDrawers();
+                    case R.id.logout:
+                        item.setChecked(true);
+                        startActivity(new Intent(ViewPagerWithTabLayout.this,LoginSharedPref.class));
+                        drawerLayout.closeDrawers();
+                        finish();
                 }
 
                 return false;

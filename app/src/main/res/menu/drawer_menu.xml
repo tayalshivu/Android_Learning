@@ -27,6 +27,12 @@
             android:title="Exit"
             />
 
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/exit_icon"
+            android:title="Logout"
+            />
+
 
     </group>
 
