@@ -12,7 +12,6 @@
         <activity android:name=".RegisterSharedPref" />
         <activity android:name=".LoginSharedPref" />
         <activity android:name=".ViewPagerWithTabLayout" />
-        <activity android:name=".Settings" />
         <activity android:name=".MainActivity" />
         <activity android:name=".FragmantDemo" />
         <activity android:name=".SplashActivity">
