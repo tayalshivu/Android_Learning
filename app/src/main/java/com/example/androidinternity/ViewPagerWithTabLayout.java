@@ -38,6 +38,7 @@ public class ViewPagerWithTabLayout extends AppCompatActivity {
         toolbar=(Toolbar)findViewById(R.id.toolbar1);
         adapter=new ViewPagerAdapter(getSupportFragmentManager());
         setSupportActionBar(toolbar);
+//        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
 
         final BaseFragment baseFragment = new BaseFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,baseFragment,null).commit();

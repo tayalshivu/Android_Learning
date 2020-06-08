@@ -2,6 +2,7 @@ package com.example.androidinternity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,8 @@ public class RegisterSharedPref extends AppCompatActivity {
                 editor.putString("password",password);
                 editor.commit();
                 Toast.makeText(RegisterSharedPref.this, "Registered.....", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(RegisterSharedPref.this,LoginSharedPref.class));
+                finish();
             }
         });
     }

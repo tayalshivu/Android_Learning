@@ -12,4 +12,9 @@
         <item name="android:windowEnterAnimation">@anim/push_up</item>
         <item name="android:windowExitAnimation">@anim/push_down</item>
     </style>
+
+    <style name="DialogFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
 </resources>
